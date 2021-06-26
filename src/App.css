@@ -1,0 +1,87 @@
+
+.grid-container {
+  background-color:  rgb(56, 56, 56);
+  background-image: linear-gradient(to right, #585e62 0%, #333333 100%);
+  border-radius: 10px;
+  margin: 7% auto;
+  width: 400px;
+  padding: 0 20px 20px 20px;
+  display:grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 50px repeat(5, 50px);
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-2v {
+  grid-row: span 2;
+}
+
+.btn, .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: rgb(77, 75, 75);
+  border: 2px solid wheat;
+  height: auto;
+  width: auto;
+  margin: .2em;
+  padding: .1em .2em; 
+  border-radius: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+/* Display background colors */
+.display {
+  display:inline-block;
+  margin-right: 10px;
+  background-color: rgb(56, 56, 56);
+  background-image: linear-gradient(to right, #545a5d 0%, #353535 100%);
+
+  border: none;
+  color: wheat;
+  text-align: right;
+  }
+
+.function {
+background-color: wheat;
+}
+
+.numbers {
+  color: wheat ;
+}
+
+/* Font sizes for display */
+.display-main {
+  font-size: 45px;
+}
+
+/* Button 3d effect */
+.btn {
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {
+  background-color: rgb(121, 118, 118);
+}
+
+.function:hover {
+  color: wheat;
+}
+
+.btn:active {
+  background-color: wheat;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: rgb(56, 56, 56);
+}
