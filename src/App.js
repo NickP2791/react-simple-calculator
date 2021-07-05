@@ -161,22 +161,15 @@ function App() {
       Recent Number {recentNum}
       <div className='grid-container'>
         <div className='display display-main span-4'>{previous}</div>
-        <div className='display display-second span-4' id='display'>
-          {current}
-        </div>
-        <button
-          className='function clear span-2'
-          id='clear'
+        <div className='display display-second span-4' id='display'>{current}</div>
+        <button className='function clear span-2' id='clear'
           onClick={
             previous ? () => dispatch({ type: "erase" }) : ClearAllCleanup
           }>
           AC
         </button>
-        <button
-          className='function'
-          id='divide'
-          onClick={
-            recentNum === "" || recentNum === "-"
+        <button className='function' id='divide'
+          onClick={ recentNum === "" || recentNum === "-"
               ? () => dispatch({ type: "divide", value: SignSwitchTest() })
               : () =>
                   dispatch({
@@ -186,11 +179,8 @@ function App() {
           }>
           /
         </button>
-        <button
-          className='function'
-          id='multiply'
-          onClick={
-            recentNum === "" || recentNum === "-"
+        <button className='function' id='multiply'
+          onClick={ recentNum === "" || recentNum === "-"
               ? () => dispatch({ type: "multiply", value: SignSwitchTest() })
               : () =>
                   dispatch({
@@ -200,20 +190,11 @@ function App() {
           }>
           X
         </button>
-        <button className='numbers' id='seven' value='7' onClick={handleNumber}>
-          7
-        </button>
-        <button className='numbers' id='eight' value='8' onClick={handleNumber}>
-          8
-        </button>
-        <button className='numbers' id='nine' value='9' onClick={handleNumber}>
-          9
-        </button>
+        <button className='numbers' id='seven' value='7' onClick={handleNumber}>7</button>
+        <button className='numbers' id='eight' value='8' onClick={handleNumber}>8</button>
+        <button className='numbers' id='nine' value='9' onClick={handleNumber}>9</button>
         {/* ################################################################# */}
-        <button
-          className='function'
-          id='subtract'
-          value='-'
+        <button className='function' id='subtract' value='-'
           onClick={
             subtotal.recOper === "-" && recentNum === "-"
               ? ""
@@ -230,28 +211,11 @@ function App() {
           -
         </button>
         {/* ################################################################# */}
-        <button className='numbers' id='four' value='4' onClick={handleNumber}>
-          4
-        </button>
-        <button
-          className='numbers five'
-          id='five'
-          value='5'
-          onClick={handleNumber}>
-          5
-        </button>
-        <button
-          className='numbers six'
-          id='six'
-          value='6'
-          onClick={handleNumber}>
-          6
-        </button>
-        <button
-          className='function add'
-          id='add'
-          onClick={
-            recentNum === "" || recentNum === "-"
+        <button className='numbers' id='four' value='4' onClick={handleNumber}>4</button>
+        <button className='numbers five' id='five' value='5' onClick={handleNumber}>5</button>
+        <button className='numbers six' id='six' value='6' onClick={handleNumber}>6</button>
+        <button className='function add' id='add'
+          onClick={ recentNum === "" || recentNum === "-"
               ? () => dispatch({ type: "add", value: SignSwitchTest() })
               : () =>
                   dispatch({
@@ -261,50 +225,17 @@ function App() {
           }>
           +
         </button>
-        <button
-          className='numbers one'
-          id='one'
-          value='1'
-          onClick={handleNumber}>
-          1
-        </button>
-        <button
-          className='numbers two'
-          id='two'
-          value='2'
-          onClick={handleNumber}>
-          2
-        </button>
-        <button
-          className='numbers three'
-          id='three'
-          value='3'
-          onClick={handleNumber}>
-          3
-        </button>
-        <button
-          className='function equal span-2v'
-          id='equals'
-          value='='
+        <button className='numbers one' id='one' value='1' onClick={handleNumber}>1</button>
+        <button className='numbers two' id='two' value='2' onClick={handleNumber}>2</button>
+        <button className='numbers three' id='three' value='3' onClick={handleNumber}>3</button>
+        <button className='function equal span-2v' id='equals' value='='
           onClick={() =>
             subtotal.recOper && dispatch({ type: "equals", value: +current })
           }>
           =
         </button>
-        <button
-          className='numbers zero span-2'
-          id='zero'
-          value='0'
-          onClick={handleNumber}>
-          0
-        </button>
-        <button
-          className='numbers decimal'
-          id='decimal'
-          value='.'
-          onClick={handleNumber}>
-          .
-        </button>
+        <button className='numbers zero span-2' id='zero' value='0' onClick={handleNumber}>0</button>
+        <button className='numbers decimal' id='decimal' value='.' onClick={handleNumber}>.</button>
       </div>
     </div>
   );
