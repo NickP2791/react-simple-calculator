@@ -151,14 +151,14 @@ function App() {
 
   return (
     <div className='App'>
-      Used in development
-      <br />
-      <br />
-      <br />
-      subtotal {subtotal.countAcc}
-      <br />
-      Recent operation {subtotal.recOper} <br />
-      Recent Number {recentNum}
+//       Used in development
+//       <br />
+//       <br />
+//       <br />
+//       subtotal {subtotal.countAcc}
+//       <br />
+//       Recent operation {subtotal.recOper} <br />
+//       Recent Number {recentNum}
       <div className='grid-container'>
         <div className='display display-main span-4'>{previous}</div>
         <div className='display display-second span-4' id='display'>{current}</div>
