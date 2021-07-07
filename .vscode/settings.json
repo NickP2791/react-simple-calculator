@@ -1,3 +1,4 @@
 {
-  "editor.wordWrapColumn": 180
+  "editor.wordWrapColumn": 180,
+  "emmet.showSuggestionsAsSnippets": true
 }
