@@ -1,8 +1,8 @@
 # Simple Calculator freeCodeCamp Project#4
 
-![Project Image](https://user-images.githubusercontent.com/79706492/147622733-81acdf19-d4be-4228-ab6b-df8cfb8820d4.png)
+![Project Image](https://user-images.githubusercontent.com/79706492/147626713-bf6f18c4-555c-405c-98f2-5d317e25e165.png)
 
-> FCC React Certification Project #5
+> FCC React Certification Project #4
 ---
 
 ### Table of Contents
@@ -19,9 +19,9 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-The project is the 5th and final required project for the React certification through freeCodeCamp.
+The project is the 4th project for the React certification through freeCodeCamp.
 
-### See it LIVE right [here](https://nickp2791.github.io/pomodoro-react/)
+### See it LIVE right [here](https://nickp2791.github.io/react-simple-calculator/)
 
 #### Technologies
 
@@ -29,13 +29,8 @@ The project is the 5th and final required project for the React certification th
 
 ## Lessons Learned
 
-This project was not difficult to build at first, BUT a major huddle was passing the test script by FCC which passes or fails the project.
-The test gives very little feedback as to what failed. As part of the learning process I had to learn to "snoop" inside the testing script to know exactly 
-what and how things were being tested.
-
-1. The test uses regex to validate to the output, which I included in the code afterwards.
-2. By stepping through my code I found that my counter went in the negatives for a split second
-3. Most important lesson, USESTATE IS AN ASYNCHRONOUS HOOK UNDER THE HOOD!!!
+Most important lesson, USESTATE IS AN ASYNCHRONOUS HOOK UNDER THE HOOD!!! This realisation is a major eyeopener.
+Setting state in not instantaneous and many console logs were required to SEE what was going on and when.
 
 [Back To The Top](#simple-calculator-freecodecamp-project#4)
 
@@ -75,7 +70,7 @@ The app was created using Create React App
 
 MIT License
 
-Copyright (c) 2021 Pomodoro by Pauletto
+Copyright (c) 2021 React Simple Calculator
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
