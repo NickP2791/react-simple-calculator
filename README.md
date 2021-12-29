@@ -70,7 +70,7 @@ The app was created using Create React App
 
 MIT License
 
-Copyright (c) 2021 React Simple Calculator
+Copyright (c) 2021 React Simple Calculator by Nicolas Pauletto
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
